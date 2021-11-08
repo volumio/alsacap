@@ -17,5 +17,12 @@ make
 make dist
 
 mkdir distfolder
+tar xf alsacap-1.0.tar.gz -C distfolder
 
+cd distfolder/alsacap-1.0/
+
+./configure
+make
+
+sudo checkinstall -D make install
 
